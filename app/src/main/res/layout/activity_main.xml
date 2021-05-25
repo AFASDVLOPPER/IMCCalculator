@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bulles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitre"
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/Jaune"
+        android:text="Calculer votre IMC"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textnom"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Nom"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texttitre" />
+
+    <TextView
+        android:id="@+id/textpnom"
+        android:layout_width="135dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Prenom"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textnom" />
+
+    <TextView
+        android:id="@+id/textage"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpnom" />
+
+    <TextView
+        android:id="@+id/textpoids"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Poids (kg)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textage" />
+
+    <TextView
+        android:id="@+id/textaille"
+        android:layout_width="155dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Taille (cm)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textpoids" />
+
+    <TextView
+        android:id="@+id/textsexe"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="Sexe"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textaille"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/IDtxtnom"
+        android:layout_width="195dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textnom"
+        app:layout_constraintTop_toBottomOf="@+id/texttitre" />
+
+    <EditText
+        android:id="@+id/IDtxtprenom"
+        android:layout_width="195dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toEndOf="@+id/textpnom"
+        app:layout_constraintTop_toBottomOf="@+id/IDtxtnom" />
+
+    <Spinner
+        android:id="@+id/IDspinnergenre"
+        android:layout_width="179dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textsexe"
+        app:layout_constraintTop_toBottomOf="@+id/IDtxttaille" />
+
+    <EditText
+        android:id="@+id/IDtxtage"
+        android:layout_width="205dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.987"
+        app:layout_constraintStart_toEndOf="@+id/textage"
+        app:layout_constraintTop_toBottomOf="@+id/IDtxtprenom" />
+
+    <EditText
+        android:id="@+id/IDtxttaille"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textaille"
+        app:layout_constraintTop_toBottomOf="@+id/IDtxtpoids" />
+
+    <EditText
+        android:id="@+id/IDtxtpoids"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toEndOf="@+id/textpoids"
+        app:layout_constraintTop_toBottomOf="@+id/IDtxtage" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="198dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/purple_200"
+        android:onClick="calculer"
+        android:text="Calculer"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IDspinnergenre"
+        app:layout_constraintVertical_bias="0.243" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

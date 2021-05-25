@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IMC-Calculator</string>
+    <string name="MessErrNom">Veuillez saisir votre nom</string>
+    <string name="MessErrPrenom">Veuillez saisir Votre prenom</string>
+    <string name="MessErrAge">Veuillez saisir Votre Age</string>
+    <string name="MessErrPoids">Saisissez votre poids en Kg</string>
+    <string name="MessErrTaille">Saisissez votre Taille en cm</string>
+    <string name="MessErrSexe">Choisissez un genre</string>
+</resources>
